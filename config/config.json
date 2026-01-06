@@ -1,0 +1,5 @@
+{
+    "entropy_cutoff":0.5,
+    "unlabeled_threshhold":0.47,
+    "lmdb_ds_size_labeled_gb": 30
+}

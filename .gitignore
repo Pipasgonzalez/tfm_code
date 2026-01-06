@@ -1,0 +1,10 @@
+data
+deprecated
+tissue_masking/models
+*.pth
+__pycache__
+*.bin
+logs/
+output_eval/
+*.out
+# *.png

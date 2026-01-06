@@ -1,0 +1,26 @@
+
+Go into  interactive session (into the terminal)
+srun --jobid=15467699 --pty /bin/bash 
+
+
+run jobid
+sbatch train_mt.sh
+
+
+check queue
+squeue -u $USER
+
+# Check detailed job info
+scontrol show job <JOBID>
+
+# Watch the output file (created automatically)
+tail -f slurm-<JOBID>.out
+
+# Cancel a job if needed
+scancel <JOBID>
+
+
+scp -r njagergallego@snellius.surf.nl:results/ D:/tfm_data/hpc_results
+
+
+rsync -avz --exclude '*.pth' njagergallego@snellius.surf.nl:results/ D:/tfm_data/hpc_results
